@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <script defer src="script.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+    <body>
+        
+        <div class="content">
+            <div class="upper">
+                <h3 id="points">Points: 00</h3>
+                <div class="material-symbols-outlined" id="settings"><a href="#">Settings</a></div>
+            </div>
+    
+            <div class="container">
+                <button type="button" id="ball"></button>
+            </div>
+            <div class="buttons">
+                <button id="start">Start</button>
+                <button id="reset">Reset</button>
+                <button id="stop">Stop</button>
+            </div>
+    
+        </div>
+
+        <div class="settings-menu">
+            <div class="upper-settings">
+                <span id="settings-title">Settings</span>
+                <span class="material-symbols-outlined" id="close-settings"><a href="#">Close</a></span>
+            </div>
+
+            <div class="manual-settings">
+                <div class="user">
+                    <div id="user-img" class="material-symbols-outlined">account_circle</div>
+                    <div id="username">Fons007h</div>
+                    <div id="high-score">Highest Score: 0</div>
+                </div>
+
+                <div class="settings-left">
+                    <div class="sounds">
+                        <span>Allow Sounds</span>
+                        <input type="checkbox" id="allow-sounds">
+                        <input type="range" min="0" max="100" value="50" class="slider" id="range-volume">
+                    </div>
+                </div>
+                <div class="settings-right">
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
