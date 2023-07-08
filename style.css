@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(226, 210, 188);
+    font-family: "Poppins";
+}
+
+.container {
+    background-image: url(https://cdn.stockmediaserver.com/smsimg31/pv/IsignstockContributors/ISS_36844_00319.jpg?token=Quu-l4b1GCk-EE9Bkzebxgo-tWP7H_tg-vEAHF9PmR8&class=pv&smss=52&expires=4102358400);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* background-color: #f2f2f2; */
+    height: 80vh;
+    width: 80vh;
+    box-shadow: 0 0 5px gray;
+    margin: auto;
+    position:relative;
+    top: 2vh;
+    border-radius: 5px;
+}
+
+.content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#ball {
+    width: 13vh;
+    height: 10vh;
+    background-color: rgba(1, 1, 1, 0);
+    cursor: pointer;
+    position: relative;
+    background-image: url(cockroach.png);
+    background-size: cover;
+}
+
+.upper {
+    height: 8vh;
+}
+/* Points Label */
+#points {
+    font-family: "Montserrat";
+    color: slategray;
+    position: relative;
+    font-size: 4vh;
+    text-align: center;
+    margin: 2vh 0;
+    float: left;
+    left: 3vh;
+}
+
+
+#settings {
+    position: relative;
+    right: 3vh;
+    top: 50%;
+    
+    float: right;
+}
+
+#settings a{
+    text-decoration: none;
+    color: slategray;
+    transition: 0.3s;
+}
+
+.buttons {
+    position: relative;
+    width: 100%;
+    top: 4vh;
+    text-align: center;
+}
+
+button {
+    position:relative;
+    border-radius: 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #6eeb98;
+    height: 5vh;
+    width: 15vh;
+    font-size: 3vh;
+    text-align: center;
+    color: rgb(77, 77, 77);
+    cursor: pointer;
+}
+
+#reset {
+    background-color: #e4aa3f;
+}
+
+#stop {
+    background-color: rgb(230, 71, 71);
+}
+
+.settings-menu {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 75vh;
+    width: 75vh;
+    background-color: rgba(221, 221, 221, 0.884);
+    position: absolute;
+    z-index: 10;
+    border-radius: 5px;
+    box-shadow: 0 0 5px slategray;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#settings:hover {
+    animation: spin 1s ease-in-out;
+}  
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(180deg);
+    }
+}
+
+.upper-settings{
+    height: 10vh;
+    border-bottom: 1px solid slategray;
+    
+}
+
+.upper-settings #settings-title {
+    position: relative;
+    float: left;
+    top: 50%;
+    transform: translate(0,-50%);
+    left: 3vh;
+    font-family: "Poppins";
+    font-size: 4vh;
+}
+
+.upper-settings #close-settings {
+    position: relative;
+    float: right;
+    top: 50%;
+    transform: translate(0,-50%);
+    right: 4vh;
+    font-size: 4vh;
+}
+
+.upper-settings #close-settings a {
+    text-decoration: none;
+    color: gray;
+    transition: 0.3s;
+}
+
+.upper-settings #close-settings a:hover {
+    transition: 0.3s;
+    color: rgba(255, 0, 0, 0.548);
+}
+
+.manual-settings {
+    width: 100%;
+    height: 65vh;
+}
+
+.user {
+    width: 100%;
+    height: 30vh;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    top: 20px;
+    border-bottom: 1px solid slategray;
+}
+
+#user-img {
+    font-size: 15vh;
+}
+
+#username {
+    font-size: 4vh;
+}
+
+#high-score {
+    font-size: 3vh;
+}
+
+.settings-right {
+    position: relative;
+    float: right;
+    width: 49%;
+    top: 4vh;
+    height: fit-content;
+    text-align: left;
+    left: 6vh;
+    font-size: 2.5vh;
+}
+
+.settings-left {
+    position: relative;
+    float: left;
+    top: 4vh;
+    left: 4vh;
+    width: 50%;
+    height: fit-content;
+    border-right: 1px solid slategray;
+    text-align: left;
+    font-size: 2.5vh;
+}
